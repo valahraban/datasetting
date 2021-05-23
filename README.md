@@ -9,7 +9,7 @@ https://creativecommons.org/licenses/by-sa/3.0/
 Material obtained through public data dumps or independent contributors with compatible licenses, then edited and curated for personal use. Intended to be compatible with the original GPT-Neo training codebase used by NAI and anyone else working with GPT-Neo. Therefore, the files **do not** end in the `<|endoftext|>` token as that's added automatically. For use with other models it may be desirable to add in said token.
 
 ## How did you do this and how can I contribute?
-Obtain a dump of the wiki you wish to extract data from. For fandom this can be done by visiting the **Special:Statistics** category and finding the bolded link for **Current pages**. Then you sould download and star the script I use and link below:  
+Obtain a dump of the wiki you wish to extract data from. For fandom this can be done by visiting the **Special:Statistics** category and finding the bolded link for **Current pages**. Then you should download and star the script I use and link below:  
 ```
 https://github.com/josecannete/wikiextractorforBERT
 ```
