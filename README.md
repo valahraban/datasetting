@@ -19,4 +19,7 @@ python WikiExtractor.py ~/Datasetting/samplefandomdump_pages_current.xml -o ~/Da
 ```
 my_categories.txt is a file you have to make yourself to support the --filter_category argument. Every newline starts with the name of a category (you don't use the Category: namespace for this). If a line starts with the letter `#` it will be commented out. If a line starts with `^` the category following it will be exluded from the extraction, this is useful for filtering sub-categories.  
 
-josecannete's fork was intended for use with BERT, but I believe the outputted txt files work good enough for use with any model. You will still have to do extreme vetting and curation on the result files with your favorite text editor tools to ensure the quality is good enough for whatever finetune application you have in mind.
+josecannete's fork was intended for use with BERT, but I believe the outputted txt files work good enough for use with any model. You will still have to do extreme vetting and curation on the result files with your favorite text editor tools to ensure the quality is good enough for whatever finetune application you have in mind.  
+
+After you're done modifying the files and are satisfied with your formatting you may want to merge them if the are multiple. This can be done on a terminal with:  
+```cat extractedfolder/*/* > fandom.txt```
