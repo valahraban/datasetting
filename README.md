@@ -22,4 +22,6 @@ my_categories.txt is a file you have to make yourself to support the --filter_ca
 josecannete's fork was intended for use with BERT, but I believe the outputted txt files work good enough for use with any model. You will still have to do extreme vetting and curation on the result files with your favorite text editor tools to ensure the quality is good enough for whatever finetune application you have in mind.  
 
 After you're done modifying the files and are satisfied with your formatting you may want to merge them if the are multiple. This can be done on a terminal with:  
-```cat extractedfolder/*/* > fandom.txt```
+```
+cat extractedfolder/*/* > fandom.txt
+```
