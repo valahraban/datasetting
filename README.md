@@ -1,2 +1,22 @@
-# finetune-dataset-gpt-neo
-Dataset txt files curated and edited by yours truly, primarily for finetuning GPT-Neo family models. Primarily obtained from wikimedia, fandom dumps and other public contributions. Every document is licensed under the GFDL. Most fandoms operate under CC BY-SA 3.0 so citation for both licenses is provided.
+# finetune-datasetting-gpt-neo
+Datasetting txt files curated and edited by yours truly, primarily for finetuning GPT-Neo family models. Primarily obtained from wikimedia, fandom dumps and other public contributions. Every document is licensed under the GFDL. Most fandoms operate under CC BY-SA 3.0 so citation for both licenses is provided.  
+
+## License Declaration
+https://www.gnu.org/licenses/fdl-1.3.html  
+https://creativecommons.org/licenses/by-sa/3.0/
+
+## What is this?
+Material obtained through public data dumps or independent contributors with compatible licenses, then edited and curated for personal use. Intended to be compatible with the original GPT-Neo training codebase used by NAI and anyone else working with GPT-Neo. Therefore, the files **do not** end in the `<|endoftext|>` token as that's added automatically. For use with other models it may be desirable to add in said token.
+
+## How did you do this and how can I contribute?
+Obtain a dump of the wiki you wish to extract data from. For fandom this can be done by visiting the **Special:Statistics** category and finding the bolded link for **Current pages**. Then you sould download and star the script I use and link below:  
+```
+https://github.com/josecannete/wikiextractorforBERT
+```
+I recommend running the WikiExtractor fork with the following example arguments (which you have to modify for your folders):  
+```
+python WikiExtractor.py ~/Datasetting/samplefandomdump_pages_current.xml -o ~/Datasetting/extractedfolder --for-bert --remove-special-tokens --filter_disambig_pages --filter_category "my_categories.txt"
+```
+my_categories.txt is a file you have to make yourself to support the --filter_category argument. Every newline starts with the name of a category (you don't use the Category: namespace for this). If a line starts with the letter `#` it will be commented out. If a line starts with `^` the category following it will be exluded from the extraction, this is useful for filtering sub-categories.  
+
+josecannete's fork was intended for use with BERT, but I believe the outputted txt files work good enough for use with any model. You will still have to do extreme vetting and curation on the result files with your favorite text editor tools to ensure the quality is good enough for whatever finetune application you have in mind.
