@@ -25,3 +25,6 @@ After you're done modifying the files and are satisfied with your formatting you
 ```
 cat extractedfolder/*/* > fandom.txt
 ```
+If for some reason you get weird and unsatisfactory output you can't fix with WEB this is due to automatic templates being broken in modern versions of WE. If you need template functionality, you need an older version of WE. You can grab it [here](https://web.archive.org/web/20201120105747/http://medialab.di.unipi.it/Project/SemaWiki/Tools/WikiExtractor.py). This version requires Python 2.7.18!
+
+It works with the same commands and arguments as regular WE. The resulting text files need extra cleaning which can be accomplished with Python scripts I've linked in my repositories.
