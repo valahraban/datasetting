@@ -1,5 +1,7 @@
 # finetune-datasetting-gpt-neo
-Datasetting txt files curated and edited by yours truly, primarily for finetuning GPT-Neo family models. Primarily obtained from wikimedia, fandom dumps and other public contributions. Every document is licensed under the GFDL. Most fandoms operate under CC BY-SA 3.0 so citation for both licenses is provided.  
+Datasetting txt files curated and edited by yours truly, primarily for finetuning GPT-Neo family models. Primarily obtained from wikimedia, fandom dumps and other public contributions. Every document is licensed under the GFDL. Most fandoms operate under CC BY-SA 3.0 so citation for both licenses is provided.
+
+Abandoned. I need to figure out a different way to publish the datasets I can. In the meanwhile this repo stays up to provide instructions for using BERT until I find a better solution for XMLs.
 
 ## License Declaration
 https://www.gnu.org/licenses/fdl-1.3.html  
