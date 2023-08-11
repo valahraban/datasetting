@@ -1,16 +1,11 @@
-# finetune-datasetting-gpt-neo
-Datasetting txt files curated and edited by yours truly, primarily for finetuning GPT-Neo family models. Primarily obtained from wikimedia, fandom dumps and other public contributions. Every document is licensed under the GFDL. Most fandoms operate under CC BY-SA 3.0 so citation for both licenses is provided.
-
-Abandoned. I need to figure out a different way to publish the datasets I can. In the meanwhile this repo stays up to provide instructions for using BERT until I find a better solution for XMLs.
+# Datasetting
+This repository was originally meant for publishing original text datasets for NLP uses. I have since reconsidered and abandoned this goal. But since this repository received Stars, I'm keeping it up for historic reasons and continuing to provide a collection of tools that may help in collecting and formatting your own text datasets. Documents under this repository are licensed under the GFDL. Most fandoms operate under CC BY-SA 3.0 so citation for both licenses is provided.  
 
 ## License Declaration
 https://www.gnu.org/licenses/fdl-1.3.html  
 https://creativecommons.org/licenses/by-sa/3.0/
 
-## What is this?
-Material obtained through public data dumps or independent contributors with compatible licenses, then edited and curated for personal use. Intended to be compatible with the original GPT-Neo training codebase used by NAI and anyone else working with GPT-Neo. Therefore, the files **do not** end in the `<|endoftext|>` token as that's added automatically. For use with other models it may be desirable to add in said token.
-
-## How did you do this and how can others do it too?
+## How to collect and extract textual data
 Obtain a dump of the wiki you wish to extract data from. For fandom this can be done by visiting the **Special:Statistics** category and finding the bolded link for **Current pages**. Then you should download and star the script I use and link below:  
 ```
 https://github.com/josecannete/wikiextractorforBERT
